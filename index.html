@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Сортировка товара на JavaScript</title>
+    <link rel="stylesheet" href="css/style.css">
+   </head>
+<body> 		
+
+    <div class="wrapper">
+    <h1>Сортировка товара на JavaScript</h1>
+
+
+    <!-- 
+    <div id="nav"> -->
+      <!-- 
+        Node.replaceChild
+        эл-т строка 3, заменяю на Тестовая строка 4
+        В рез-те замены у меня в переменную возвращается строка 3
+        Поск. я то что заменил могу получить в переменную, то я могу его вставить куда хочу 
+
+        для сортировки мне нужно:
+         - получить элемент nav-item
+         - вытащить из него атрибут
+         - если атр. получен, то сравнить один атр. со следующим,
+           если они разняться, то поменять местами, если нет - то ничего не делать
+         -->
+    <!--
+    <div class="nav-item" data-sort="3" data-desc="2">строка 3</div>
+      <div class="nav-item" data-sort="4" data-desc="1">строка 4</div>
+      <div class="nav-item" data-sort="1" data-desc="4">строка 1</div>
+      <div class="nav-item" data-sort="2" data-desc="3">строка 2</div>
+    </div> -->
+
+
+    <header class="header">
+      <button class="header__button" id="sort-up">Цена по возрастанию</button>
+      <button class="header__button" id="sort-down">Цена по убыванию</button>
+      <button class="header__button" id="sort-rating-up">Рейтинг по возрастанию</button>
+      <button class="header__button" id="sort-rating-down">Рейтинг по убыванию</button>
+    </header>
+
+    <div class="container">
+
+      <div class="card" data-price="150" data-rating="2">
+        <img class="card__img" src="img/1.jpg" alt="">
+        <p class="rating">рейтинг 2</p>
+        <h2 class="card__title">Монитор 23.5" Samsung</h2>
+        <p  class="card__price">150 usd</p>
+        <button class="card__buy">Купить</button>
+      </div>
+
+      <div class="card" data-price="100" data-rating="8">
+        <img class="card__img" src="img/2.jpg" alt="">
+        <p class="rating">рейтинг 8</p>
+        <h2 class="card__title">Монитор 24" Dell </h2>
+        <p class="card__price">100 usd</p>
+        <button class="card__buy">Купить</button>
+      </div>
+
+      <div class="card" data-price="120" data-rating="10">
+        <img class="card__img" src="img/3.jpg" alt="">
+        <p class="rating">рейтинг 10</p>
+        <h2 class="card__title">Монитор 27" MSI</h2>
+        <p  class="card__price">120 usd</p>
+        <button class="card__buy">Купить</button>
+      </div>
+
+      <div class="card" data-price="450" data-rating="9">
+        <img class="card__img" src="img/4.jpg" alt="">
+        <p class="rating">рейтинг 9</p>
+        <h2 class="card__title">Монитор 23.8" LG</h2>
+        <p  class="card__price">450 usd</p>
+        <button class="card__buy">Купить</button>
+      </div>
+
+      <div class="card" data-price="320" data-rating="4">
+        <img class="card__img" src="img/5.jpg" alt="">
+        <p class="rating">рейтинг 4</p>
+        <h2 class="card__title">Монитор 24" Samsung</h2>
+        <p  class="card__price">320 usd</p>
+        <button class="card__buy">Купить</button>
+      </div>
+
+      <div class="card" data-price="50" data-rating="3">
+        <img class="card__img" src="img/6.jpg" alt="">
+        <p class="rating">рейтинг 3</p>
+        <h2 class="card__title">Монитор 18.5" Acer</h2>
+        <p  class="card__price">50 usd</p>
+        <button class="card__buy">Купить</button>
+      </div>
+
+      <div class="card" data-price="400" data-rating="1">
+        <img class="card__img" src="img/7.jpg" alt="">
+        <p class="rating">рейтинг 1</p>
+        <h2 class="card__title">Монитор 24" Asus</h2>
+        <p  class="card__price">400 usd</p>
+        <button class="card__buy">Купить</button>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="js/index.js"></script>
+</body>
+</html>
